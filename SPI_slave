@@ -1,0 +1,213 @@
+/////////////////////////////////////////////////////////////////////////////	
+//
+//  CVS Log
+//
+// 
+//	$Id: spi_slave_david_one_state 
+//  $Date: 2016/01/27 10:55
+//  $Revision: 1.2
+//  $Author: Mark Lin $
+// 
+//  
+//
+// Change History:
+//               $Log: spi_slave_david.v,v $
+//               state machine use one always 
+//               always (pos clk) only one state 
+//				$2016/01/19: change reset ==> !reset (syscronize I2C's RESETn)
+//              $2016/01/27: change (dectect receive data function,bitcont,MISO output function 
+////////////////////////////////////////////////////////////////////////////
+module spi_slave_david(
+           //cpld clock & reset
+		   input        CLK,
+		   input		reset,
+           // SPI Signal
+           input        SCLK,    // SPI clock
+           input        SSn,     // Slave select lines
+           input        MOSI,    // Master out slave in
+           output  reg  MISO,    // Master in slave out
+		   // Local Bus Signal
+           output reg[7:0] COMMAND_ID,	
+		   output reg[7:0]STATUS_REGISTER_i,	//WRSR MODE
+		   output [23:0] ADD_CYCLE,			//READ MODE
+		   //MISO DATA 
+		   output [23:0]RDID_d,
+		   output [7:0] READ_d
+         );
+parameter IDLE=3'b000;
+parameter START=3'b001;
+parameter COMMAND=3'b010;
+parameter WRSR=3'b101;
+parameter READ=3'b110;
+parameter STOP=3'b111;
+//
+wire GO;
+wire MOSI_data;
+wire pipe_pos;
+wire pipe_neg;
+reg SCLK_pipe;
+reg [5:0] bitcnt;
+reg [3:0]NS;
+reg [7:0]	data_recived;
+reg [23:0]	RDID_READDATA = {8'hA0,8'h5A,8'hA5};/////////////////////////////////////////////////////////
+reg [7:0]	READ_READDATA = {8'h5A};////////////////////////////////////////////////////////////////////
+reg [7:0]	ADD_1;
+reg [7:0]	ADD_2;
+reg [7:0]	ADD_3;
+
+
+//
+assign GO = ~SSn;
+assign ADD_CYCLE= {ADD_3[7:0],ADD_2[7:0],ADD_1[7:0]};
+assign pipe_pos = ({SCLK,SCLK_pipe}==2'b10);
+assign pipe_neg = ({SCLK,SCLK_pipe}==2'b01);
+assign MOSI_data= MOSI;
+assign RDID_d	= RDID_READDATA;
+assign READ_d	= READ_READDATA;
+//8-bit shift-registor
+always @(posedge CLK)
+	begin
+		SCLK_pipe<=	SCLK;
+	end
+//count 0~32 & MOSI
+always @(posedge CLK)
+	begin
+		if(!GO||!reset)
+			begin
+				bitcnt <=6'd0;
+				data_recived <= 8'd0;
+			end
+		else
+			begin
+				if (pipe_pos)
+					data_recived <= {data_recived[6:0],MOSI_data};
+				else if(pipe_neg)
+					begin
+						if(bitcnt == 6'd40 || GO==1'b0)
+							bitcnt <= 6'd0;
+						else 
+							begin
+							bitcnt <= bitcnt+6'd1;
+							end
+					end
+				else
+					begin
+						bitcnt <= bitcnt;
+						data_recived <= data_recived;
+					end
+			end
+	end
+//FSM
+always @(posedge CLK)
+	if (!reset)
+        begin
+            NS	<= IDLE;
+			COMMAND_ID			<=8'b0;
+			STATUS_REGISTER_i	<=8'b0;
+			ADD_3				<=8'b0;
+			ADD_2				<=8'b0;
+			ADD_1				<=8'b0;
+			MISO				<=1'b0;
+        end
+	else
+	begin
+		case(NS)
+		IDLE: //00	
+			begin
+				MISO				<=1'bz;
+				if(GO)	
+					NS<=START;
+				else
+					NS<=IDLE;
+			end
+		START: //01
+			begin
+				COMMAND_ID			<=8'b0;
+				STATUS_REGISTER_i	<=8'b0;
+				ADD_3				<=8'b0;
+				ADD_2				<=8'b0;
+				ADD_1				<=8'b0;
+				NS					<= COMMAND;
+
+			end
+
+		COMMAND: //010
+			begin
+				if ((bitcnt == 6'd7) && (SCLK_pipe == 1'b1) && GO) ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			
+					begin
+						COMMAND_ID	<= data_recived[7:0];
+
+					end
+				else
+					begin
+						COMMAND_ID	<= COMMAND_ID;
+					end
+
+				//COMMAND: RDID MODE
+				if (COMMAND_ID==8'h9f)
+					begin
+						MISO		<= (pipe_neg == 1'b1)?((bitcnt<=30)?RDID_READDATA[30-(bitcnt)]:1'bz):MISO;
+								
+						NS			<=((bitcnt == 6'd31) && (pipe_neg == 1'b1))? STOP:COMMAND;
+					end
+				//COMMAND: WRSR MODE
+				else if (COMMAND_ID==8'h01)
+					begin
+						NS			<= WRSR;
+					end
+				//COMMAND: READ MODE
+				else if (COMMAND_ID==8'h03)
+					begin
+						NS			<= READ;
+					end
+				//COMMAND: RDSR MODE
+				else if (COMMAND_ID==8'h05)
+					begin
+						MISO		<= (pipe_neg == 1'b1)?((bitcnt<=15)?STATUS_REGISTER_i[15-(bitcnt)]:1'b0):MISO;
+						NS			<=((bitcnt == 6'd16) && (pipe_neg == 1'b1) )?STOP:COMMAND;	
+					end
+				else
+					begin
+						NS			<= COMMAND;
+					end
+				
+			end
+		WRSR: //101
+			begin
+				STATUS_REGISTER_i 	<=((bitcnt == 6'd15) && (SCLK_pipe == 1'b1) && GO)?(data_recived[7:0]):(STATUS_REGISTER_i);
+				NS				 	<=((bitcnt == 6'd15) && (pipe_neg == 1'b1) && GO)?STOP:WRSR;	
+			end
+		READ: //110
+			begin
+				ADD_3				<=((bitcnt == 6'd16) && (pipe_neg == 1'b1) && GO)?(data_recived[7:0]):(ADD_3);
+				ADD_2				<=((bitcnt == 6'd24) && (pipe_neg == 1'b1) && GO)?(data_recived[7:0]):(ADD_2);
+				ADD_1				<=((bitcnt == 6'd32) && (pipe_neg == 1'b1) && GO)?(data_recived[7:0]):(ADD_1);
+				NS				 	<=((bitcnt == 6'd39) && (pipe_neg == 1'b1) && GO)?STOP:READ;
+				MISO				<= (pipe_neg == 1'b1)?((bitcnt>=31&&bitcnt<=38)?READ_READDATA[38-(bitcnt)]:1'bz):MISO;
+								
+			end
+		STOP: //111
+			begin
+				NS				 	<=(!GO)?IDLE:STOP;
+				ADD_3				<=ADD_3;
+				ADD_2				<=ADD_2;
+				ADD_1				<=ADD_1;
+				MISO				<=1'bz;
+				COMMAND_ID  		<= COMMAND_ID;
+				STATUS_REGISTER_i	<= STATUS_REGISTER_i;	
+			end
+		default:
+			begin
+				COMMAND_ID			<=8'b0; 
+				STATUS_REGISTER_i	<=8'b0;
+				MISO				<=1'bz;
+				ADD_3				<=8'b0;
+				ADD_2				<=8'b0;
+				ADD_1				<=8'b0;
+			end
+		endcase		
+	end
+
+endmodule
+ 
