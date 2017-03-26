@@ -1,0 +1,79 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate -expand -group i2c_slave /tb_i2c_master/U01/RESETn
+add wave -noupdate -expand -group i2c_slave /tb_i2c_master/U01/SYSTEM_CLK
+add wave -noupdate -expand -group i2c_slave /tb_i2c_master/U01/SCL
+add wave -noupdate -expand -group i2c_slave /tb_i2c_master/U01/SDA
+add wave -noupdate -expand -group i2c_slave /tb_i2c_master/U01/read
+add wave -noupdate -expand -group i2c_slave /tb_i2c_master/U01/write
+add wave -noupdate -expand -group i2c_slave -radix hexadecimal /tb_i2c_master/U01/address_data
+add wave -noupdate -expand -group i2c_slave -radix hexadecimal /tb_i2c_master/U01/offset_data
+add wave -noupdate -expand -group i2c_slave -radix hexadecimal /tb_i2c_master/U01/write_data
+add wave -noupdate -expand -group i2c_slave /tb_i2c_master/U01/tx_data
+add wave -noupdate -expand -group i2c_slave -radix hexadecimal /tb_i2c_master/U01/rx_address
+add wave -noupdate -expand -group i2c_slave -radix hexadecimal /tb_i2c_master/U01/rx_data
+add wave -noupdate -expand -group i2c_slave -radix hexadecimal /tb_i2c_master/U01/rx_offset
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/RESETn
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/SYSTEM_CLK
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/SCL
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/SDA
+add wave -noupdate -expand -group i2c_master -radix unsigned /tb_i2c_master/mi2c_master_ctrl/mi2c_master/cnt
+add wave -noupdate -expand -group i2c_master -radix unsigned /tb_i2c_master/mi2c_master_ctrl/mi2c_master/state_m
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/enable_buf
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/read
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/write
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/address
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/offset
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/w_data
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/count
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/r_cnt
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/w_cnt
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/sda_pipe
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/scl_pipe
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/pipe_1mhz
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/address_data
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/RW_data
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/offset_data
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/write_data
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/tx_shift
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/master_ack
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/sda_o
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/stop_sdaoe
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/tx_data
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/shift_reg
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/shift_address
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/shift_offset
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/shift_w_data
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/clk_100khz
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/clk_400khz
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/clk_1mhz
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/load
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/clk_oe
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/state
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/nack
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/clk_nack
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/sr_sig
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/wcnt_1
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/wcnt_2
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/wcnt_3
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/sclk_in
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/cnt
+add wave -noupdate -expand -group i2c_master /tb_i2c_master/mi2c_master_ctrl/mi2c_master/sda_oe
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {45329900 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 1
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 10000
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ms
+update
+WaveRestoreZoom {29119700 ps} {82885200 ps}
