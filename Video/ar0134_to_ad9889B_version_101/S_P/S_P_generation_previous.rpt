@@ -1,0 +1,28 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate E:\Galaxy\GFEC\02_Altera\Altera_DemoBoard\CV_GX_Claire_Kit\project\CAM2HDMI_2019\S_P.qsys --block-symbol-file --output-directory=E:\Galaxy\GFEC\02_Altera\Altera_DemoBoard\CV_GX_Claire_Kit\project\CAM2HDMI_2019\S_P --family="Cyclone V" --part=5CGXBC7D7F31C8
+Progress: Loading CAM2HDMI_2019/S_P.qsys
+Progress: Reading input file
+Progress: Adding in_system_sources_probes_0 [altera_in_system_sources_probes 16.1]
+Progress: Parameterizing module in_system_sources_probes_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate E:\Galaxy\GFEC\02_Altera\Altera_DemoBoard\CV_GX_Claire_Kit\project\CAM2HDMI_2019\S_P.qsys --synthesis=VERILOG --output-directory=E:\Galaxy\GFEC\02_Altera\Altera_DemoBoard\CV_GX_Claire_Kit\project\CAM2HDMI_2019\S_P\synthesis --family="Cyclone V" --part=5CGXBC7D7F31C8
+Progress: Loading CAM2HDMI_2019/S_P.qsys
+Progress: Reading input file
+Progress: Adding in_system_sources_probes_0 [altera_in_system_sources_probes 16.1]
+Progress: Parameterizing module in_system_sources_probes_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: S_P: Generating S_P "S_P" for QUARTUS_SYNTH
+Info: in_system_sources_probes_0: "S_P" instantiated altera_in_system_sources_probes "in_system_sources_probes_0"
+Info: S_P: Done "S_P" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

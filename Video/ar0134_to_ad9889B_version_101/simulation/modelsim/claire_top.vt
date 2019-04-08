@@ -1,0 +1,176 @@
+// Copyright (C) 2016  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "01/29/2019 11:42:44"
+                                                                                
+// Verilog Test Bench template for design : claire_top
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1ns/ 10ps
+module claire_top_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg treg_APT_SCL;
+reg treg_APT_SDA;
+reg CLK_AB17;
+reg LMK_C0;
+reg LMK_C2;
+reg LMK_C4;
+reg OSC_100M;
+reg OSC_148M5;
+wire PIX_CLK;
+wire [11:2] PIX_DATA;
+wire PIX_FV;
+wire PIX_LV;
+reg PLL_CLKOUT3_CMOS;
+reg SENSOR_CLK;
+reg [11:2] SENSOR_DATA;
+reg SENSOR_FV;
+reg SENSOR_LV;
+reg treg_SENSOR_SCL;
+reg treg_SENSOR_SDA;
+reg SW0;
+reg SW1;
+reg SW2;
+reg SW3;
+reg treg_VIDEO_OUT_SCL;
+reg treg_VIDEO_OUT_SDA;
+// wires                                               
+wire APT_RSTn;
+wire APT_SCL;
+wire APT_SDA;
+wire CLK_AA18;
+wire [7:0]  LED;
+wire LMK_CIN;
+wire LMK_CLK;
+wire LMK_DATA;
+wire LMK_LE;
+wire SENSOR_ERR;
+wire SENSOR_RSTn;
+wire SENSOR_SCL;
+wire SENSOR_SDA;
+wire [7:0]  VIDEO_OUT_B;
+wire VIDEO_OUT_CLK;
+wire VIDEO_OUT_DE;
+wire [7:0]  VIDEO_OUT_G;
+wire VIDEO_OUT_HDCP_EN;
+wire VIDEO_OUT_HS;
+wire [7:0]  VIDEO_OUT_R;
+wire VIDEO_OUT_SCL;
+wire VIDEO_OUT_SDA;
+wire VIDEO_OUT_VS;
+
+// assign statements (if any)                          
+assign APT_SCL = treg_APT_SCL;
+assign APT_SDA = treg_APT_SDA;
+assign SENSOR_SCL = treg_SENSOR_SCL;
+assign SENSOR_SDA = treg_SENSOR_SDA;
+assign VIDEO_OUT_SCL = treg_VIDEO_OUT_SCL;
+assign VIDEO_OUT_SDA = treg_VIDEO_OUT_SDA;
+claire_top i1 (
+// port map - connection between master ports and signals/registers   
+	.APT_RSTn(APT_RSTn),
+	.APT_SCL(APT_SCL),
+	.APT_SDA(APT_SDA),
+	.CLK_AA18(CLK_AA18),
+	.CLK_AB17(CLK_AB17),
+	.LED(LED),
+	.LMK_C0(LMK_C0),
+	.LMK_C2(LMK_C2),
+	.LMK_C4(LMK_C4),
+	.LMK_CIN(LMK_CIN),
+	.LMK_CLK(LMK_CLK),
+	.LMK_DATA(LMK_DATA),
+	.LMK_LE(LMK_LE),
+	.OSC_100M(OSC_100M),
+	.OSC_148M5(OSC_148M5),
+	.PIX_CLK(PIX_CLK),
+	.PIX_DATA(PIX_DATA),
+	.PIX_FV(PIX_FV),
+	.PIX_LV(PIX_LV),
+	.PLL_CLKOUT3_CMOS(PLL_CLKOUT3_CMOS),
+	.SENSOR_CLK(SENSOR_CLK),
+	.SENSOR_DATA(SENSOR_DATA),
+	.SENSOR_ERR(SENSOR_ERR),
+	.SENSOR_FV(SENSOR_FV),
+	.SENSOR_LV(SENSOR_LV),
+	.SENSOR_RSTn(SENSOR_RSTn),
+	.SENSOR_SCL(SENSOR_SCL),
+	.SENSOR_SDA(SENSOR_SDA),
+	.SW0(SW0),
+	.SW1(SW1),
+	.SW2(SW2),
+	.SW3(SW3),
+	.VIDEO_OUT_B(VIDEO_OUT_B),
+	.VIDEO_OUT_CLK(VIDEO_OUT_CLK),
+	.VIDEO_OUT_DE(VIDEO_OUT_DE),
+	.VIDEO_OUT_G(VIDEO_OUT_G),
+	.VIDEO_OUT_HDCP_EN(VIDEO_OUT_HDCP_EN),
+	.VIDEO_OUT_HS(VIDEO_OUT_HS),
+	.VIDEO_OUT_R(VIDEO_OUT_R),
+	.VIDEO_OUT_SCL(VIDEO_OUT_SCL),
+	.VIDEO_OUT_SDA(VIDEO_OUT_SDA),
+	.VIDEO_OUT_VS(VIDEO_OUT_VS)
+);
+
+initial begin
+	
+	OSC_148M5 = 0;
+	forever 
+		#3.367 OSC_148M5 = ~OSC_148M5;
+	
+end
+
+initial begin
+	
+	SW0 = 1;
+
+end
+
+tb_ar0134   tb_ar0134_inst(
+
+   .iRstn     (           ),
+   .oPixelClk ( PIX_CLK   ), 
+   .oFV       ( PIX_FV    ),
+   .oLV       ( PIX_LV    ),
+   .oData     ( PIX_DATA  )
+   
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  
+endmodule
+

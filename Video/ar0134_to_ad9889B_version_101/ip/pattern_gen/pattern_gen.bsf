@@ -1,0 +1,143 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 640 328)
+	(text "pattern_gen" (rect 286 -1 333 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 312 20 324)(font "Arial" ))
+	(port
+		(pt 0 256)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 245 46 256)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 272 256)(line_width 1))
+	)
+	(port
+		(pt 0 296)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 285 82 296)(font "Arial" (font_size 8)))
+		(line (pt 0 296)(pt 272 296)(line_width 1))
+	)
+	(port
+		(pt 0 72)
+		(output)
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_data[23..0]" (rect 0 0 197 12)(font "Arial" (font_size 8)))
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_data[23..0]" (rect 4 61 280 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 272 72)(line_width 3))
+	)
+	(port
+		(pt 0 88)
+		(output)
+		(text "alt_vip_cl_cvo_0_clocked_video_underflow" (rect 0 0 175 12)(font "Arial" (font_size 8)))
+		(text "alt_vip_cl_cvo_0_clocked_video_underflow" (rect 4 77 244 88)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 272 88)(line_width 1))
+	)
+	(port
+		(pt 0 104)
+		(output)
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_mode_change" (rect 0 0 212 12)(font "Arial" (font_size 8)))
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_mode_change" (rect 4 93 280 104)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 272 104)(line_width 1))
+	)
+	(port
+		(pt 0 120)
+		(output)
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_std" (rect 0 0 167 12)(font "Arial" (font_size 8)))
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_std" (rect 4 109 232 120)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 272 120)(line_width 1))
+	)
+	(port
+		(pt 0 136)
+		(output)
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_datavalid" (rect 0 0 189 12)(font "Arial" (font_size 8)))
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_datavalid" (rect 4 125 268 136)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 272 136)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(output)
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_v_sync" (rect 0 0 187 12)(font "Arial" (font_size 8)))
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_v_sync" (rect 4 141 250 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 272 152)(line_width 1))
+	)
+	(port
+		(pt 0 168)
+		(output)
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_h_sync" (rect 0 0 186 12)(font "Arial" (font_size 8)))
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_h_sync" (rect 4 157 250 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 272 168)(line_width 1))
+	)
+	(port
+		(pt 0 184)
+		(output)
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_f" (rect 0 0 159 12)(font "Arial" (font_size 8)))
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_f" (rect 4 173 220 184)(font "Arial" (font_size 8)))
+		(line (pt 0 184)(pt 272 184)(line_width 1))
+	)
+	(port
+		(pt 0 200)
+		(output)
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_h" (rect 0 0 160 12)(font "Arial" (font_size 8)))
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_h" (rect 4 189 220 200)(font "Arial" (font_size 8)))
+		(line (pt 0 200)(pt 272 200)(line_width 1))
+	)
+	(port
+		(pt 0 216)
+		(output)
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_v" (rect 0 0 161 12)(font "Arial" (font_size 8)))
+		(text "alt_vip_cl_cvo_0_clocked_video_vid_v" (rect 4 205 220 216)(font "Arial" (font_size 8)))
+		(line (pt 0 216)(pt 272 216)(line_width 1))
+	)
+	(drawing
+		(text "alt_vip_cl_cvo_0_clocked_video" (rect 87 43 354 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "vid_data" (rect 277 67 602 144)(font "Arial" (color 0 0 0)))
+		(text "underflow" (rect 277 83 608 176)(font "Arial" (color 0 0 0)))
+		(text "vid_mode_change" (rect 277 99 644 208)(font "Arial" (color 0 0 0)))
+		(text "vid_std" (rect 277 115 596 240)(font "Arial" (color 0 0 0)))
+		(text "vid_datavalid" (rect 277 131 632 272)(font "Arial" (color 0 0 0)))
+		(text "vid_v_sync" (rect 277 147 614 304)(font "Arial" (color 0 0 0)))
+		(text "vid_h_sync" (rect 277 163 614 336)(font "Arial" (color 0 0 0)))
+		(text "vid_f" (rect 277 179 584 368)(font "Arial" (color 0 0 0)))
+		(text "vid_h" (rect 277 195 584 400)(font "Arial" (color 0 0 0)))
+		(text "vid_v" (rect 277 211 584 432)(font "Arial" (color 0 0 0)))
+		(text "clk" (rect 257 227 532 467)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 277 251 572 512)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 243 267 516 547)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 277 291 596 592)(font "Arial" (color 0 0 0)))
+		(text " pattern_gen " (rect 586 312 1250 634)(font "Arial" ))
+		(line (pt 272 32)(pt 368 32)(line_width 1))
+		(line (pt 368 32)(pt 368 312)(line_width 1))
+		(line (pt 272 312)(pt 368 312)(line_width 1))
+		(line (pt 272 32)(pt 272 312)(line_width 1))
+		(line (pt 273 52)(pt 273 220)(line_width 1))
+		(line (pt 274 52)(pt 274 220)(line_width 1))
+		(line (pt 273 236)(pt 273 260)(line_width 1))
+		(line (pt 274 236)(pt 274 260)(line_width 1))
+		(line (pt 273 276)(pt 273 300)(line_width 1))
+		(line (pt 274 276)(pt 274 300)(line_width 1))
+		(line (pt 0 0)(pt 640 0)(line_width 1))
+		(line (pt 640 0)(pt 640 328)(line_width 1))
+		(line (pt 0 328)(pt 640 328)(line_width 1))
+		(line (pt 0 0)(pt 0 328)(line_width 1))
+	)
+)

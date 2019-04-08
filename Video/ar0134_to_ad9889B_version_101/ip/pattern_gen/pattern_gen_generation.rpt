@@ -1,0 +1,347 @@
+Info: Starting: Create simulation model
+Info: qsys-generate E:\Galaxy\GFEC\02_Altera\Altera_DemoBoard\CV_GX_Claire_Kit\project\CAM2HDMI_2019\ip\pattern_gen.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=E:\Galaxy\GFEC\02_Altera\Altera_DemoBoard\CV_GX_Claire_Kit\project\CAM2HDMI_2019\ip\pattern_gen\simulation --family="Cyclone V" --part=5CGXBC7D6F31C7
+Progress: Loading ip/pattern_gen.qsys
+Progress: Reading input file
+Progress: Adding alt_vip_cl_cvo_0 [alt_vip_cl_cvo 16.1]
+Progress: Parameterizing module alt_vip_cl_cvo_0
+Progress: Adding alt_vip_cl_scl_0 [alt_vip_cl_scl 16.1]
+Progress: Parameterizing module alt_vip_cl_scl_0
+Progress: Adding alt_vip_cl_tpg_0 [alt_vip_cl_tpg 16.1]
+Progress: Parameterizing module alt_vip_cl_tpg_0
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Adding master_0 [altera_jtag_avalon_master 16.1]
+Progress: Parameterizing module master_0
+Progress: Adding mm_master_bfm_0 [altera_avalon_mm_master_bfm 16.1]
+Progress: Parameterizing module mm_master_bfm_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: pattern_gen.alt_vip_cl_cvo_0: Interrupt sender alt_vip_cl_cvo_0.status_update_irq is not connected to an interrupt receiver
+Info: pattern_gen: Generating pattern_gen "pattern_gen" for SIM_VERILOG
+Info: alt_vip_cl_cvo_0: "pattern_gen" instantiated alt_vip_cl_cvo "alt_vip_cl_cvo_0"
+Info: alt_vip_cl_scl_0: "pattern_gen" instantiated alt_vip_cl_scl "alt_vip_cl_scl_0"
+Info: alt_vip_cl_tpg_0: "pattern_gen" instantiated alt_vip_cl_tpg "alt_vip_cl_tpg_0"
+Info: master_0: "pattern_gen" instantiated altera_jtag_avalon_master "master_0"
+Info: mm_master_bfm_0: "pattern_gen" instantiated altera_avalon_mm_master_bfm "mm_master_bfm_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "pattern_gen" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "pattern_gen" instantiated altera_reset_controller "rst_controller"
+Info: video_in: "alt_vip_cl_cvo_0" instantiated alt_vip_video_input_bridge "video_in"
+Info: scheduler: "alt_vip_cl_cvo_0" instantiated alt_vip_cvo_scheduler "scheduler"
+Info: sop_align: "alt_vip_cl_cvo_0" instantiated alt_vip_pip_sop_realign "sop_align"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: cvo_core: "alt_vip_cl_cvo_0" instantiated alt_vip_cvo_core "cvo_core"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: control: "alt_vip_cl_cvo_0" instantiated alt_vip_control_slave "control"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: video_in_resp: "alt_vip_cl_scl_0" instantiated alt_vip_video_input_bridge_resp "video_in_resp"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: video_out: "alt_vip_cl_scl_0" instantiated alt_vip_video_output_bridge "video_out"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_sop_align/src_hdl/alt_vip_common_sop_align.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_sop_align/src_hdl/alt_vip_common_sop_align.sv
+Info: scheduler: "alt_vip_cl_scl_0" instantiated alt_vip_scaler_scheduler "scheduler"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: kernel_creator: "alt_vip_cl_scl_0" instantiated alt_vip_scaler_kernel_creator "kernel_creator"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: video_in_cmd: "alt_vip_cl_scl_0" instantiated alt_vip_video_input_bridge_cmd "video_in_cmd"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: input_demux: "alt_vip_cl_scl_0" instantiated alt_vip_packet_demux "input_demux"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: line_buffer_0: "alt_vip_cl_scl_0" instantiated alt_vip_line_buffer "line_buffer_0"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_sop_align/src_hdl/alt_vip_common_sop_align.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_sop_align/src_hdl/alt_vip_common_sop_align.sv
+Info: scaler_core_0: "alt_vip_cl_scl_0" instantiated alt_vip_scaler_alg_core "scaler_core_0"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: seq_to_par_0: "alt_vip_cl_scl_0" instantiated alt_vip_pip_converter_core "seq_to_par_0"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_fifo2/src_hdl/alt_vip_common_fifo2.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_fifo2/src_hdl/alt_vip_common_fifo2.sv
+Info: output_mux: "alt_vip_cl_scl_0" instantiated alt_vip_packet_mux "output_mux"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: tpg_core: "alt_vip_cl_tpg_0" instantiated alt_vip_tpg_alg_core "tpg_core"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: scheduler: "alt_vip_cl_tpg_0" instantiated alt_vip_tpg_scheduler "scheduler"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/mentor/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/aldec/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: jtag_phy_embedded_in_jtag_master: "master_0" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: timing_adt: "master_0" instantiated timing_adapter "timing_adt"
+Info: fifo: "master_0" instantiated altera_avalon_sc_fifo "fifo"
+Info: b2p: "master_0" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: p2b: "master_0" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: transacto: "master_0" instantiated altera_avalon_packets_to_master "transacto"
+Info: b2p_adapter: "master_0" instantiated channel_adapter "b2p_adapter"
+Info: p2b_adapter: "master_0" instantiated channel_adapter "p2b_adapter"
+Info: mm_master_bfm_0_m0_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "mm_master_bfm_0_m0_translator"
+Info: alt_vip_cl_cvo_0_control_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "alt_vip_cl_cvo_0_control_translator"
+Info: mm_master_bfm_0_m0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "mm_master_bfm_0_m0_agent"
+Info: alt_vip_cl_cvo_0_control_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "alt_vip_cl_cvo_0_control_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: mm_master_bfm_0_m0_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "mm_master_bfm_0_m0_limiter"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/altera_avalon_st_pipeline_base.v
+Info: alt_vip_cl_cvo_0_control_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "alt_vip_cl_cvo_0_control_burst_adapter"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: pattern_gen: Done "pattern_gen" with 47 modules, 189 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=E:\Galaxy\GFEC\02_Altera\Altera_DemoBoard\CV_GX_Claire_Kit\project\CAM2HDMI_2019\ip\pattern_gen\pattern_gen.spd --output-directory=E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=E:\Galaxy\GFEC\02_Altera\Altera_DemoBoard\CV_GX_Claire_Kit\project\CAM2HDMI_2019\ip\pattern_gen\pattern_gen.spd --output-directory=E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	32 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate E:\Galaxy\GFEC\02_Altera\Altera_DemoBoard\CV_GX_Claire_Kit\project\CAM2HDMI_2019\ip\pattern_gen.qsys --block-symbol-file --output-directory=E:\Galaxy\GFEC\02_Altera\Altera_DemoBoard\CV_GX_Claire_Kit\project\CAM2HDMI_2019\ip\pattern_gen --family="Cyclone V" --part=5CGXBC7D6F31C7
+Progress: Loading ip/pattern_gen.qsys
+Progress: Reading input file
+Progress: Adding alt_vip_cl_cvo_0 [alt_vip_cl_cvo 16.1]
+Progress: Parameterizing module alt_vip_cl_cvo_0
+Progress: Adding alt_vip_cl_scl_0 [alt_vip_cl_scl 16.1]
+Progress: Parameterizing module alt_vip_cl_scl_0
+Progress: Adding alt_vip_cl_tpg_0 [alt_vip_cl_tpg 16.1]
+Progress: Parameterizing module alt_vip_cl_tpg_0
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Adding master_0 [altera_jtag_avalon_master 16.1]
+Progress: Parameterizing module master_0
+Progress: Adding mm_master_bfm_0 [altera_avalon_mm_master_bfm 16.1]
+Progress: Parameterizing module mm_master_bfm_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: pattern_gen.alt_vip_cl_cvo_0: Interrupt sender alt_vip_cl_cvo_0.status_update_irq is not connected to an interrupt receiver
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate E:\Galaxy\GFEC\02_Altera\Altera_DemoBoard\CV_GX_Claire_Kit\project\CAM2HDMI_2019\ip\pattern_gen.qsys --synthesis=VERILOG --output-directory=E:\Galaxy\GFEC\02_Altera\Altera_DemoBoard\CV_GX_Claire_Kit\project\CAM2HDMI_2019\ip\pattern_gen\synthesis --family="Cyclone V" --part=5CGXBC7D6F31C7
+Progress: Loading ip/pattern_gen.qsys
+Progress: Reading input file
+Progress: Adding alt_vip_cl_cvo_0 [alt_vip_cl_cvo 16.1]
+Progress: Parameterizing module alt_vip_cl_cvo_0
+Progress: Adding alt_vip_cl_scl_0 [alt_vip_cl_scl 16.1]
+Progress: Parameterizing module alt_vip_cl_scl_0
+Progress: Adding alt_vip_cl_tpg_0 [alt_vip_cl_tpg 16.1]
+Progress: Parameterizing module alt_vip_cl_tpg_0
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Adding master_0 [altera_jtag_avalon_master 16.1]
+Progress: Parameterizing module master_0
+Progress: Adding mm_master_bfm_0 [altera_avalon_mm_master_bfm 16.1]
+Progress: Parameterizing module mm_master_bfm_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: pattern_gen.alt_vip_cl_cvo_0: Interrupt sender alt_vip_cl_cvo_0.status_update_irq is not connected to an interrupt receiver
+Info: pattern_gen: Generating pattern_gen "pattern_gen" for QUARTUS_SYNTH
+Info: alt_vip_cl_cvo_0: "pattern_gen" instantiated alt_vip_cl_cvo "alt_vip_cl_cvo_0"
+Info: alt_vip_cl_scl_0: "pattern_gen" instantiated alt_vip_cl_scl "alt_vip_cl_scl_0"
+Info: alt_vip_cl_tpg_0: "pattern_gen" instantiated alt_vip_cl_tpg "alt_vip_cl_tpg_0"
+Info: master_0: "pattern_gen" instantiated altera_jtag_avalon_master "master_0"
+Info: mm_master_bfm_0: "pattern_gen" instantiated altera_avalon_mm_master_bfm "mm_master_bfm_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "pattern_gen" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "pattern_gen" instantiated altera_reset_controller "rst_controller"
+Info: video_in: "alt_vip_cl_cvo_0" instantiated alt_vip_video_input_bridge "video_in"
+Info: scheduler: "alt_vip_cl_cvo_0" instantiated alt_vip_cvo_scheduler "scheduler"
+Info: sop_align: "alt_vip_cl_cvo_0" instantiated alt_vip_pip_sop_realign "sop_align"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: cvo_core: "alt_vip_cl_cvo_0" instantiated alt_vip_cvo_core "cvo_core"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: control: "alt_vip_cl_cvo_0" instantiated alt_vip_control_slave "control"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: video_in_resp: "alt_vip_cl_scl_0" instantiated alt_vip_video_input_bridge_resp "video_in_resp"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: video_out: "alt_vip_cl_scl_0" instantiated alt_vip_video_output_bridge "video_out"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_sop_align/src_hdl/alt_vip_common_sop_align.sv
+Info: scheduler: "alt_vip_cl_scl_0" instantiated alt_vip_scaler_scheduler "scheduler"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: kernel_creator: "alt_vip_cl_scl_0" instantiated alt_vip_scaler_kernel_creator "kernel_creator"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: video_in_cmd: "alt_vip_cl_scl_0" instantiated alt_vip_video_input_bridge_cmd "video_in_cmd"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: input_demux: "alt_vip_cl_scl_0" instantiated alt_vip_packet_demux "input_demux"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: line_buffer_0: "alt_vip_cl_scl_0" instantiated alt_vip_line_buffer "line_buffer_0"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_sop_align/src_hdl/alt_vip_common_sop_align.sv
+Info: scaler_core_0: "alt_vip_cl_scl_0" instantiated alt_vip_scaler_alg_core "scaler_core_0"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: seq_to_par_0: "alt_vip_cl_scl_0" instantiated alt_vip_pip_converter_core "seq_to_par_0"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_fifo2/src_hdl/alt_vip_common_fifo2.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_fifo2/src_hdl/alt_vip_common_fifo2.sdc
+Info: output_mux: "alt_vip_cl_scl_0" instantiated alt_vip_packet_mux "output_mux"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: tpg_core: "alt_vip_cl_tpg_0" instantiated alt_vip_tpg_alg_core "tpg_core"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: scheduler: "alt_vip_cl_tpg_0" instantiated alt_vip_tpg_scheduler "scheduler"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/common/alt_vip_common_pkg.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_decode/src_hdl/alt_vip_common_event_packet_decode.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/modules/alt_vip_common_event_packet_encode/src_hdl/alt_vip_common_event_packet_encode.sv
+Info: jtag_phy_embedded_in_jtag_master: "master_0" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: timing_adt: "master_0" instantiated timing_adapter "timing_adt"
+Info: fifo: "master_0" instantiated altera_avalon_sc_fifo "fifo"
+Info: b2p: "master_0" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: p2b: "master_0" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: transacto: "master_0" instantiated altera_avalon_packets_to_master "transacto"
+Info: b2p_adapter: "master_0" instantiated channel_adapter "b2p_adapter"
+Info: p2b_adapter: "master_0" instantiated channel_adapter "p2b_adapter"
+Info: mm_master_bfm_0_m0_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "mm_master_bfm_0_m0_translator"
+Info: alt_vip_cl_cvo_0_control_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "alt_vip_cl_cvo_0_control_translator"
+Info: mm_master_bfm_0_m0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "mm_master_bfm_0_m0_agent"
+Info: alt_vip_cl_cvo_0_control_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "alt_vip_cl_cvo_0_control_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: mm_master_bfm_0_m0_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "mm_master_bfm_0_m0_limiter"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: alt_vip_cl_cvo_0_control_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "alt_vip_cl_cvo_0_control_burst_adapter"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file E:/Galaxy/GFEC/02_Altera/Altera_DemoBoard/CV_GX_Claire_Kit/project/CAM2HDMI_2019/ip/pattern_gen/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: pattern_gen: Done "pattern_gen" with 47 modules, 134 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
