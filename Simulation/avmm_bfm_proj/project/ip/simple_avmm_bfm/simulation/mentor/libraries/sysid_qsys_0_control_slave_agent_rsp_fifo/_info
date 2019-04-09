@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Galaxy/GFEC/02_Altera/Altera_IP/verified_IP/avmm_bfm_proj/ip/simple_avmm_bfm/simulation/mentor
+valtera_avalon_sc_fifo
+!s110 1554787856
+!i10b 1
+!s100 4mK@em][G=j]om3zJIhOc0
+I2Ygzl[cb]F@WkA<:3MPGC0
+VDg1SIo80bB@j0V0VzS_@n1
+dE:/Galaxy/GFEC/02_Altera/Altera_IP/verified_IP/avmm_bfm_proj/project/ip/simple_avmm_bfm/simulation/mentor
+w1554785320
+8./../submodules/altera_avalon_sc_fifo.v
+F./../submodules/altera_avalon_sc_fifo.v
+L0 21
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1554787856.000000
+!s107 ./../submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|./../submodules/altera_avalon_sc_fifo.v|-work|sysid_qsys_0_control_slave_agent_rsp_fifo|
+!i113 1
+o-work sysid_qsys_0_control_slave_agent_rsp_fifo
+tCvgOpt 0

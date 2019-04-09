@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Galaxy/GFEC/02_Altera/Altera_IP/verified_IP/avmm_bfm_proj/ip/simple_avmm_bfm/simulation/mentor
+valtera_reset_controller
+Z0 !s110 1554787857
+!i10b 1
+!s100 z[H_hRO9gO=:^2E3_jWH03
+I5VG:hXMS<^z[_N3SMUlKT3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dE:/Galaxy/GFEC/02_Altera/Altera_IP/verified_IP/avmm_bfm_proj/project/ip/simple_avmm_bfm/simulation/mentor
+Z3 w1554785320
+8./../submodules/altera_reset_controller.v
+F./../submodules/altera_reset_controller.v
+L0 42
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1554787856.000000
+!s107 ./../submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|./../submodules/altera_reset_controller.v|-work|rst_controller|
+!i113 1
+Z5 o-work rst_controller
+Z6 tCvgOpt 0
+valtera_reset_synchronizer
+R0
+!i10b 1
+!s100 oWLYmSO[EOX[G0PgQhZ2=0
+IhFVbn]P0aM7VjLNcWTf]C0
+R1
+R2
+R3
+8./../submodules/altera_reset_synchronizer.v
+F./../submodules/altera_reset_synchronizer.v
+L0 24
+R4
+r1
+!s85 0
+31
+!s108 1554787857.000000
+!s107 ./../submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|./../submodules/altera_reset_synchronizer.v|-work|rst_controller|
+!i113 1
+R5
+R6

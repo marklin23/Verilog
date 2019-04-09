@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Galaxy/GFEC/02_Altera/Altera_IP/verified_IP/avmm_bfm_proj/ip/simple_avmm_bfm/simulation/mentor
+vsimple_avmm_bfm_mm_interconnect_0
+!s110 1554787857
+!i10b 1
+!s100 niY01^bGaiVmD1;WY>Y8A3
+IdTAJn3l`9]KFB>]Y<@mod0
+VDg1SIo80bB@j0V0VzS_@n1
+dE:/Galaxy/GFEC/02_Altera/Altera_IP/verified_IP/avmm_bfm_proj/project/ip/simple_avmm_bfm/simulation/mentor
+w1554785320
+8./../submodules/simple_avmm_bfm_mm_interconnect_0.v
+F./../submodules/simple_avmm_bfm_mm_interconnect_0.v
+L0 9
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1554787857.000000
+!s107 ./../submodules/simple_avmm_bfm_mm_interconnect_0.v|
+!s90 -reportprogress|300|./../submodules/simple_avmm_bfm_mm_interconnect_0.v|-work|mm_interconnect_0|
+!i113 1
+o-work mm_interconnect_0
+tCvgOpt 0

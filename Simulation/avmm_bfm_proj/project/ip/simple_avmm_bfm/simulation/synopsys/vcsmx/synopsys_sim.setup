@@ -1,0 +1,33 @@
+
+WORK > DEFAULT
+DEFAULT:                                   ./libraries/work/                                     
+work:                                      ./libraries/work/                                     
+altera_common_sv_packages:                 ./libraries/altera_common_sv_packages/                
+error_adapter_0:                           ./libraries/error_adapter_0/                          
+avalon_st_adapter:                         ./libraries/avalon_st_adapter/                        
+rsp_mux:                                   ./libraries/rsp_mux/                                  
+rsp_demux:                                 ./libraries/rsp_demux/                                
+cmd_mux:                                   ./libraries/cmd_mux/                                  
+cmd_demux:                                 ./libraries/cmd_demux/                                
+sysid_qsys_0_control_slave_burst_adapter:  ./libraries/sysid_qsys_0_control_slave_burst_adapter/ 
+mm_master_bfm_0_m0_limiter:                ./libraries/mm_master_bfm_0_m0_limiter/               
+router_001:                                ./libraries/router_001/                               
+router:                                    ./libraries/router/                                   
+sysid_qsys_0_control_slave_agent_rsp_fifo: ./libraries/sysid_qsys_0_control_slave_agent_rsp_fifo/
+sysid_qsys_0_control_slave_agent:          ./libraries/sysid_qsys_0_control_slave_agent/         
+mm_master_bfm_0_m0_agent:                  ./libraries/mm_master_bfm_0_m0_agent/                 
+sysid_qsys_0_control_slave_translator:     ./libraries/sysid_qsys_0_control_slave_translator/    
+mm_master_bfm_0_m0_translator:             ./libraries/mm_master_bfm_0_m0_translator/            
+rst_controller:                            ./libraries/rst_controller/                           
+mm_interconnect_0:                         ./libraries/mm_interconnect_0/                        
+sysid_qsys_0:                              ./libraries/sysid_qsys_0/                             
+reg32_write_port:                          ./libraries/reg32_write_port/                         
+reg32_read_port:                           ./libraries/reg32_read_port/                          
+onchip_memory2_0:                          ./libraries/onchip_memory2_0/                         
+mm_master_bfm_0:                           ./libraries/mm_master_bfm_0/                          
+altera_ver:                                ./libraries/altera_ver/                               
+lpm_ver:                                   ./libraries/lpm_ver/                                  
+sgate_ver:                                 ./libraries/sgate_ver/                                
+altera_mf_ver:                             ./libraries/altera_mf_ver/                            
+altera_lnsim_ver:                          ./libraries/altera_lnsim_ver/                         
+fiftyfivenm_ver:                           ./libraries/fiftyfivenm_ver/                          

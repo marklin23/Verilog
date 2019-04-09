@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Galaxy/GFEC/02_Altera/Altera_IP/verified_IP/avmm_bfm_proj/ip/simple_avmm_bfm/simulation/mentor
+vsimple_avmm_bfm_mm_interconnect_0_router
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1554787856
+!i10b 1
+!s100 9Qc_8bDdQmJ;JO`R696oz1
+I^fbhojMDW;f6<lG7WC=OM0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 !s105 simple_avmm_bfm_mm_interconnect_0_router_sv_unit
+S1
+Z4 dE:/Galaxy/GFEC/02_Altera/Altera_IP/verified_IP/avmm_bfm_proj/project/ip/simple_avmm_bfm/simulation/mentor
+Z5 w1554785320
+Z6 8./../submodules/simple_avmm_bfm_mm_interconnect_0_router.sv
+Z7 F./../submodules/simple_avmm_bfm_mm_interconnect_0_router.sv
+L0 84
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1554787856.000000
+Z10 !s107 ./../submodules/simple_avmm_bfm_mm_interconnect_0_router.sv|
+Z11 !s90 -reportprogress|300|-sv|./../submodules/simple_avmm_bfm_mm_interconnect_0_router.sv|-L|altera_common_sv_packages|-work|router|
+!i113 1
+Z12 o-sv -L altera_common_sv_packages -work router
+Z13 tCvgOpt 0
+vsimple_avmm_bfm_mm_interconnect_0_router_default_decode
+R0
+R1
+!i10b 1
+!s100 CPU:@dAHBSAE45CEhf9=_3
+IGW;UDi8bbPA<W4>>H6e4T3
+R2
+R3
+S1
+R4
+R5
+R6
+R7
+L0 45
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13

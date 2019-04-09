@@ -1,0 +1,34 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Galaxy/GFEC/02_Altera/Altera_IP/verified_IP/avmm_bfm_proj/ip/simple_avmm_bfm/simulation/mentor
+valtera_merlin_master_translator
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1554787856
+!i10b 1
+!s100 NdRk@]3fC2C@V7Rm;dQM31
+I>Eek^Zhh:KXb14bD3f`YJ0
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 altera_merlin_master_translator_sv_unit
+S1
+dE:/Galaxy/GFEC/02_Altera/Altera_IP/verified_IP/avmm_bfm_proj/project/ip/simple_avmm_bfm/simulation/mentor
+w1554785320
+8./../submodules/altera_merlin_master_translator.sv
+F./../submodules/altera_merlin_master_translator.sv
+L0 32
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1554787856.000000
+!s107 ./../submodules/altera_merlin_master_translator.sv|
+!s90 -reportprogress|300|-sv|./../submodules/altera_merlin_master_translator.sv|-L|altera_common_sv_packages|-work|mm_master_bfm_0_m0_translator|
+!i113 1
+o-sv -L altera_common_sv_packages -work mm_master_bfm_0_m0_translator
+tCvgOpt 0

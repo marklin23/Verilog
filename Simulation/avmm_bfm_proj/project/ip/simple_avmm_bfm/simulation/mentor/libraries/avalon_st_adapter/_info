@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Galaxy/GFEC/02_Altera/Altera_IP/verified_IP/avmm_bfm_proj/ip/simple_avmm_bfm/simulation/mentor
+vsimple_avmm_bfm_mm_interconnect_0_avalon_st_adapter
+!s110 1554787852
+!i10b 1
+!s100 Rd]QbmVAML;:l7X@6_olf1
+IIDWIDhZFhgO3@Hhf=<JW>1
+VDg1SIo80bB@j0V0VzS_@n1
+dE:/Galaxy/GFEC/02_Altera/Altera_IP/verified_IP/avmm_bfm_proj/project/ip/simple_avmm_bfm/simulation/mentor
+w1554785322
+8./../submodules/simple_avmm_bfm_mm_interconnect_0_avalon_st_adapter.v
+F./../submodules/simple_avmm_bfm_mm_interconnect_0_avalon_st_adapter.v
+L0 9
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1554787852.000000
+!s107 ./../submodules/simple_avmm_bfm_mm_interconnect_0_avalon_st_adapter.v|
+!s90 -reportprogress|300|./../submodules/simple_avmm_bfm_mm_interconnect_0_avalon_st_adapter.v|-work|avalon_st_adapter|
+!i113 1
+o-work avalon_st_adapter
+tCvgOpt 0

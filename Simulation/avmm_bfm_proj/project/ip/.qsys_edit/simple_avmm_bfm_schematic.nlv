@@ -1,0 +1,18 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst simple_avmm_bfm.clk_0 -pg 1 -lvl 1 -y 250
+preplace inst simple_avmm_bfm.reg32_write_port -pg 1 -lvl 3 -y 290
+preplace inst simple_avmm_bfm.mm_master_bfm_0 -pg 1 -lvl 2 -y 230
+preplace inst simple_avmm_bfm.sysid_qsys_0 -pg 1 -lvl 3 -y 110
+preplace inst simple_avmm_bfm.onchip_memory2_0 -pg 1 -lvl 3 -y 30
+preplace inst simple_avmm_bfm.reg32_read_port -pg 1 -lvl 3 -y 190
+preplace inst simple_avmm_bfm -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc FAN_OUT<net_container>simple_avmm_bfm</net_container>(SLAVE)sysid_qsys_0.control_slave,(MASTER)mm_master_bfm_0.m0,(SLAVE)onchip_memory2_0.s1,(SLAVE)reg32_write_port.s1,(SLAVE)reg32_read_port.s1) 1 2 1 600
+preplace netloc EXPORT<net_container>simple_avmm_bfm</net_container>(SLAVE)simple_avmm_bfm.reg32_read_port_external_connection,(SLAVE)reg32_read_port.external_connection) 1 0 3 NJ 220 NJ 220 NJ
+preplace netloc FAN_OUT<net_container>simple_avmm_bfm</net_container>(SLAVE)mm_master_bfm_0.clk_reset,(SLAVE)reg32_write_port.reset,(SLAVE)onchip_memory2_0.reset1,(MASTER)clk_0.clk_reset,(SLAVE)reg32_read_port.reset,(SLAVE)sysid_qsys_0.reset) 1 1 2 430 340 620
+preplace netloc EXPORT<net_container>simple_avmm_bfm</net_container>(SLAVE)simple_avmm_bfm.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>simple_avmm_bfm</net_container>(SLAVE)clk_0.clk_in,(SLAVE)simple_avmm_bfm.clk) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>simple_avmm_bfm</net_container>(SLAVE)mm_master_bfm_0.clk,(SLAVE)sysid_qsys_0.clk,(MASTER)clk_0.clk,(SLAVE)reg32_read_port.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)reg32_write_port.clk) 1 1 2 410 300 580
+preplace netloc EXPORT<net_container>simple_avmm_bfm</net_container>(SLAVE)reg32_write_port.external_connection,(SLAVE)simple_avmm_bfm.reg32_write_port_external_connection) 1 0 3 NJ 320 NJ 320 NJ
+levelinfo -pg 1 0 200 830
+levelinfo -hier simple_avmm_bfm 210 240 470 670 820
